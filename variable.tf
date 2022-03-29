@@ -1,6 +1,6 @@
 variable "vpc_id" {}
 
-variable "name" {
+variable "subnet_name" {
   description = "Name of the Subnet group"
   type        = string
 }
