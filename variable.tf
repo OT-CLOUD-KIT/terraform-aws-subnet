@@ -2,7 +2,7 @@ variable "vpc_id" {}
 
 variable "subnet_name" {
   description = "Name of the Subnet group"
-  type        = string
+  type        = list(string)
 }
 
 variable "availability_zones" {
@@ -10,10 +10,17 @@ variable "availability_zones" {
 }
 
 variable "tags" {
+  description = "A map of tags to be added to resource"
+  type        = map(string)
+  default     = {}
+}
+
+variable "subnet_tags" {
   description = "A map of tags to be added to subnets"
   type        = map(string)
   default     = {}
 }
+
 
 variable "subnets_cidr" {
   description = "List of CIDR's for subnets"

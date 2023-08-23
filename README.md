@@ -13,7 +13,7 @@ Terraform module which creates subnets in AWS.
 Terraform versions
 ------------------
 
-Terraform 0.12.
+Terraform v0.14.9
 
 Usage
 ------
@@ -29,7 +29,7 @@ module "Subnets" {
 Tags
 ----
 * Tags are assigned to resources with name variable as prefix.
-* Additial tags can be assigned by tags variables as defined above.
+* Additial tags can be assigned to pvt_subnet using subnet_tags variables as defined above.
 
 ## Otput 
 
