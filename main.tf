@@ -5,7 +5,7 @@ resource "aws_subnet" "subnet" {
   vpc_id                  = var.vpc_id
   tags = merge(
     {
-      Name = format("%s-%d", var.subnet_name,count.index+1)
+      Name = format("%s-%d", var.subnet_name)
     },
     var.tags,
   )
