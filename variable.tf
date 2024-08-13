@@ -2,7 +2,7 @@ variable "vpc_id" {}
 
 variable "subnet_name" {
   description = "Name of the Subnet group"
-  type        = string
+  type        = list(string)
 }
 
 variable "availability_zones" {
